@@ -2,8 +2,7 @@ package bd.daos;
 
 import java.sql.*;
 import bd.*;
-import bd.core.*;
-import bd.dbos.*;
+import bd.cora.MeuResultSet;
 
 public class Categorias
 {

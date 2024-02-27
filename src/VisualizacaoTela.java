@@ -1,18 +1,9 @@
-import bd.BDSQLServer;
-import bd.core.MeuResultSet;
 import bd.daos.Categorias;
 import bd.daos.Produtos;
-import bd.dbos.Categoria;
-import bd.dbos.Produto;
-
+import bd.cora.MeuResultSet;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-import javax.imageio.*;
-import javax.swing.border.Border;
-import java.io.*;
-import java.util.*;
-import java.sql.*;
 
 public class VisualizacaoTela  extends JFrame implements MouseListener, MouseMotionListener,ActionListener
 {

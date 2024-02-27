@@ -1,7 +1,7 @@
 package bd.daos;
 
 import bd.BDSQLServer;
-import bd.core.MeuResultSet;
+import bd.cora.MeuResultSet;
 import bd.dbos.Venda;
 
 import javax.swing.*;
@@ -182,8 +182,6 @@ public class Vendas
         System.out.println(idProduto);
 
         MeuResultSet resultado = Produtos.getProduto();
-        String dados = "";
-
         double preco =  resultado.getDouble("preco");
         System.out.println(preco);
 

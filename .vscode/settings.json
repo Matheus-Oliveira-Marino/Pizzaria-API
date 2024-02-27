@@ -2,6 +2,9 @@
     "java.project.sourcePaths": ["src"],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
-        "lib/**/*.jar"
+        "lib/**/*.jar",
+        "C:\\Users\\maths\\Desktop\\Projeto 2\\Pizzaria CRUD\\Pizzaria-API\\src\\bd\\sqljdbc4.jar"
     ]
 }
+
+

@@ -1,20 +1,16 @@
-import bd.BDSQLServer;
 import bd.daos.Produtos;
 import bd.dbos.Produto;
-
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-import javax.imageio.*;
-import java.io.*;
-import java.util.*;
-import java.sql.*;
 
 public class Janela extends JFrame implements MouseListener, MouseMotionListener,ActionListener
 {
 
     private static final long serialVersionUID = 1L;
     private String txtProduto,txtValor,txtDescricao,txtCategoria;
+
+    @SuppressWarnings("unused")
     private int idCategoria, id = 1;
 
     protected JButton
@@ -40,6 +36,7 @@ public class Janela extends JFrame implements MouseListener, MouseMotionListener
 
     String [] categ = {"Pizzas","Bebidas","Aperitivos","Sobremesa"};
 
+    @SuppressWarnings("rawtypes")
     protected JComboBox cb_Categoria = new JComboBox<>(categ);
     protected boolean seila = false;
 

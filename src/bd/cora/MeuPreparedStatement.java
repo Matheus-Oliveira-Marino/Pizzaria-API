@@ -1,4 +1,4 @@
-package bd.core;
+package bd.cora;
 
 import java.io.InputStream;
 import java.io.Reader;
@@ -345,6 +345,7 @@ public class MeuPreparedStatement extends MeuStatement implements PreparedStatem
         this.comando.setTimestamp (parameterIndex, x, cal);
     }
 
+    @SuppressWarnings("deprecation")
     public void setUnicodeStream (int parameterIndex, InputStream x, int length) throws SQLException
     {
         this.comando.setUnicodeStream (parameterIndex, x, length);
@@ -364,6 +365,7 @@ public class MeuPreparedStatement extends MeuStatement implements PreparedStatem
         return ret;
     }
 
+    @SuppressWarnings("unlikely-arg-type")
     public boolean equals (Object obj)
     {
         if (obj==null)
@@ -403,7 +405,7 @@ public class MeuPreparedStatement extends MeuStatement implements PreparedStatem
 		return ret;
     }
 
-    // O metodo compareTo, que é, por vezes, obrigatorio, nao esta
+    // O metodo compareTo, que ï¿½, por vezes, obrigatorio, nao esta
     // sendo implementado porque, tendo dois objetos instanciados
     // desta classe, nao faria sentido pensar em qual deles eh o
     // maior ou em qual deles eh o menor.

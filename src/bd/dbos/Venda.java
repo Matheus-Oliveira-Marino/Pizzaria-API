@@ -1,8 +1,5 @@
 package bd.dbos;
 
-import bd.daos.Produtos;
-import bd.daos.Vendas;
-
 public class Venda
 {
     private int idPedido;

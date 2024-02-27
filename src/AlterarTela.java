@@ -1,16 +1,9 @@
-import bd.BDSQLServer;
-import bd.core.MeuResultSet;
 import bd.daos.Produtos;
 import bd.dbos.Produto;
 
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-import javax.imageio.*;
-import javax.swing.border.Border;
-import java.io.*;
-import java.util.*;
-import java.sql.*;
 
 public class AlterarTela extends JFrame implements MouseListener, MouseMotionListener, ActionListener
 {
@@ -32,6 +25,8 @@ public class AlterarTela extends JFrame implements MouseListener, MouseMotionLis
             btn_voltar = new JButton("Voltar");
 
     String [] categ = {"Pizzas","Bebidas","Aperitivos","Sobremesa"};
+    
+    @SuppressWarnings("rawtypes")
     protected JComboBox cb_Categoria = new JComboBox<>(categ);
 
     private String txtProduto,txtValor,txtDescricao,txtCategoria;

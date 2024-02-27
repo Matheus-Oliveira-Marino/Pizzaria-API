@@ -1,4 +1,3 @@
-import bd.daos.Produtos;
 import bd.daos.Vendas;
 
 import java.awt.*;

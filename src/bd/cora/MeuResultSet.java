@@ -1,4 +1,4 @@
-package bd.core;
+package bd.cora;
 
 import java.sql.Array;
 import java.sql.Blob;
@@ -111,6 +111,7 @@ public class MeuResultSet implements ResultSet
         return this.resultado.getBigDecimal (columnIndex);
     }
 
+    @SuppressWarnings("deprecation")
     public BigDecimal getBigDecimal (int columnIndex, int scale) throws SQLException
     {
         return this.resultado.getBigDecimal (columnIndex, scale);
@@ -121,6 +122,7 @@ public class MeuResultSet implements ResultSet
         return this.resultado.getBigDecimal (columnLabel);
     }
 
+    @SuppressWarnings("deprecation")
     public BigDecimal getBigDecimal (String columnLabel, int scale) throws SQLException
     {
         return this.resultado.getBigDecimal (columnLabel, scale);
@@ -451,11 +453,13 @@ public class MeuResultSet implements ResultSet
         return this.resultado.getType ();
     }
 
+    @SuppressWarnings("deprecation")
     public InputStream getUnicodeStream (int columnIndex) throws SQLException
     {
         return this.resultado.getUnicodeStream (columnIndex);
     }
 
+    @SuppressWarnings("deprecation")
     public InputStream getUnicodeStream (String columnLabel) throws SQLException
     {
         return this.resultado.getUnicodeStream (columnLabel);
@@ -1047,7 +1051,7 @@ public class MeuResultSet implements ResultSet
 		return ret;
     }
 
-    // O metodo compareTo, que é, por vezes, obrigatorio, nao esta
+    // O metodo compareTo, que ï¿½, por vezes, obrigatorio, nao esta
     // sendo implementado porque, tendo dois objetos instanciados
     // desta classe, nao faria sentido pensar em qual deles eh o
     // maior ou em qual deles eh o menor.
