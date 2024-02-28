@@ -3,12 +3,25 @@ package bd.daos;
 import bd.BDSQLServer;
 import bd.cora.MeuResultSet;
 import bd.dbos.Venda;
-
 import javax.swing.*;
 import java.sql.SQLException;
 
+
+/**
+ * A classe 'Vendas' fornece métodos para realizar operações relacionadas às vendas 
+ * em um banco de dados.
+ * Ela interage com a tabela 'Vendas' no banco de dados 'pizzaria'.
+ */
 public class Vendas
 {
+
+    /**
+     * Verifica se uma venda está cadastrada no banco de dados com base no seu 'ID'.
+     *
+     * @param idVenda O 'ID' da venda a ser verificada.
+     * @return 'true' se a venda estiver cadastrada, 'false' caso contrário.
+     * @throws Exception Se ocorrer um erro durante a verificação.
+     */
     public static boolean cadastro (int idVenda) throws Exception
     {
         boolean retorno = false;
@@ -34,6 +47,13 @@ public class Vendas
         return retorno;
     }
 
+
+       /**
+     * Inclui uma nova venda no banco de dados.
+     *
+     * @param venda O objeto 'Venda' a ser incluído.
+     * @throws Exception Se ocorrer um erro durante a inclusão da venda.
+     */
     public static void incluir(Venda venda) throws Exception
     {
         if(venda == null)
@@ -63,6 +83,13 @@ public class Vendas
         }
     }
 
+
+    /**
+     * Exclui uma venda do banco de dados com base no seu 'ID'.
+     *
+     * @param idVenda O 'ID' da venda a ser excluída.
+     * @throws Exception Se ocorrer um erro durante a exclusão da venda.
+     */
     public static void excluir(int idVenda) throws Exception
     {
         if (!cadastro(idVenda)) {
@@ -121,6 +148,14 @@ public class Vendas
         }
     }
 
+
+    /**
+     * Obtém uma venda do banco de dados com base no seu 'ID'.
+     *
+     * @param idVenda O 'ID' da venda a ser recuperada.
+     * @return O objeto 'Venda' recuperado.
+     * @throws Exception Se ocorrer um erro durante a recuperação da venda.
+     */
     public static Venda getVenda(int idVenda) throws Exception
     {
         Venda venda = null;
@@ -153,6 +188,13 @@ public class Vendas
         return venda;
     }
 
+
+     /**
+     * Obtém todas as vendas cadastradas no banco de dados.
+     *
+     * @return Um objeto 'MeuResultSet' contendo todas as vendas cadastradas.
+     * @throws Exception Se ocorrer um erro durante a recuperação das vendas.
+     */
     public static MeuResultSet getVenda () throws Exception
     {
         MeuResultSet resultado = null;
@@ -177,6 +219,14 @@ public class Vendas
         return resultado;
     }
 
+
+     /**
+     * Obtém o preço de um produto com base no seu 'ID'.
+     *
+     * @param idProduto O 'ID' do produto.
+     * @return O preço do produto.
+     * @throws Exception Se ocorrer um erro durante a recuperação do preço.
+     */
     public static double preco(int idProduto) throws Exception
     {
         System.out.println(idProduto);

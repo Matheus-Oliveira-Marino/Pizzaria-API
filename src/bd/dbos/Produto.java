@@ -1,18 +1,34 @@
 package bd.dbos;
 
+
+/**
+ * A classe 'Produto' representa um produto em um sistema de gerenciamento de vendas.
+ * Cada produto possui um identificador único: 'nome', 'preço', 'descrição' e 'categoria'.
+ */
 public class Produto implements Cloneable
 {
-    private int idProduto;
-    private String nome;
-    private double preco;
-    private String descricao;
-    private int categoria;
+    private int idProduto; // Identificador único do produto
+    private String nome; // Nome do produto
+    private double preco; // Preço do produto
+    private String descricao; // Descrição do produto
+    private int categoria; // Categoria do produto
 
-    public int getIdProduto()
-    {
-        return this.idProduto;
-    }
 
+
+     /**
+     * Obtém o identificador único do produto.
+     *
+     * @return O identificador único do produto.
+     */
+    public int getIdProduto() {return this.idProduto;}
+
+
+     /**
+     * Define o identificador único do produto.
+     *
+     * @param idProduto O novo identificador único do produto.
+     * @throws Exception Se o código fornecido for inválido.
+     */
     public void setIdProduto(int idProduto) throws Exception
     {
         if(idProduto <= 0)
@@ -21,10 +37,22 @@ public class Produto implements Cloneable
         this.idProduto = idProduto;
     }
 
-    public String getNome() {
-        return this.nome;
-    }
 
+    /**
+     * Obtém o nome do produto.
+     *
+     * @return O nome do produto.
+     */
+    public String getNome() {return this.nome;}
+    
+
+
+     /**
+     * Define o nome do produto.
+     *
+     * @param nome O novo nome do produto.
+     * @throws Exception Se o nome fornecido for inválido.
+     */
     public void setNome(String nome) throws Exception
     {
         if(nome == null || nome.equals(""))
@@ -33,8 +61,22 @@ public class Produto implements Cloneable
         this.nome = nome;
     }
 
+
+      /**
+     * Obtém o preço do produto.
+     *
+     * @return O preço do produto.
+     */
     public double getPreco() {return this.preco;}
 
+
+    
+    /**
+     * Define o preço do produto.
+     *
+     * @param preco O novo preço do produto.
+     * @throws Exception Se o preço fornecido for inválido.
+     */
     public void setPreco(double preco) throws Exception
     {
         if(preco <= 0)
@@ -43,8 +85,21 @@ public class Produto implements Cloneable
         this.preco = preco;
     }
 
+
+     /**
+     * Obtém a descrição do produto.
+     *
+     * @return A descrição do produto.
+     */
     public String getDescricao() {return this.descricao;}
 
+
+    /**
+     * Define a descrição do produto.
+     *
+     * @param descricao A nova descrição do produto.
+     * @throws Exception Se a descrição fornecida for inválida.
+     */
     public void setDescricao(String descricao) throws Exception
     {
         if (descricao == null || descricao.equals(""))
@@ -53,7 +108,21 @@ public class Produto implements Cloneable
         this.descricao = descricao;
     }
 
+
+    
+    /**
+     * Obtém a categoria do produto.
+     *
+     * @return A categoria do produto.
+     */
     public int getCategoria() {return this.categoria;}
+
+     /**
+     * Define a categoria do produto.
+     *
+     * @param categoria A nova categoria do produto.
+     * @throws Exception Se a categoria fornecida for inválida.
+     */
     public void setCategoria(int categoria) throws Exception
     {
         if(categoria <= 0)
@@ -62,6 +131,15 @@ public class Produto implements Cloneable
         this.categoria = categoria;
     }
 
+     /**
+     * Construtor da classe Produto.
+     *
+     * @param nome Nome do produto.
+     * @param preco Preço do produto.
+     * @param descricao Descrição do produto.
+     * @param categoria Categoria do produto.
+     * @throws Exception Se algum dos parâmetros fornecidos for inválido.
+     */
     public Produto(String nome, double preco, String descricao,int categoria) throws Exception
     {
         //this.setIdProduto(idProduto);
@@ -71,6 +149,17 @@ public class Produto implements Cloneable
         this.setCategoria(categoria);
     }
 
+
+    /**
+     * Construtor da classe Produto.
+     *
+     * @param nome Nome do produto.
+     * @param preco Preço do produto.
+     * @param descricao Descrição do produto.
+     * @param categoria Categoria do produto.
+     * @param idProduto Identificador único do produto.
+     * @throws Exception Se algum dos parâmetros fornecidos for inválido.
+     */
     public Produto(String nome, double preco, String descricao,int categoria, int idProduto) throws Exception
     {
         this.setIdProduto(idProduto);
@@ -80,6 +169,13 @@ public class Produto implements Cloneable
         this.setCategoria(categoria);
     }
 
+
+    
+    /**
+     * Retorna uma representação textual do produto.
+     *
+     * @return Uma string contendo o código, nome, preço, descrição e categoria do produto.
+     */
     @Override
     public String toString()
     {
@@ -94,6 +190,14 @@ public class Produto implements Cloneable
         return ret;
     }
 
+
+    
+    /**
+     * Verifica se o produto é igual a outro objeto.
+     *
+     * @param obj O objeto a ser comparado.
+     * @return 'true' se o produto for igual ao objeto fornecido, 'false' caso contrário.
+     */
     @Override
     public boolean equals(Object obj)
     {
@@ -111,6 +215,12 @@ public class Produto implements Cloneable
         return true;
     }
 
+
+     /**
+     * Retorna o código de hash do produto.
+     *
+     * @return O código de hash do produto.
+     */
     @Override
     public int hashCode()
     {
@@ -127,6 +237,13 @@ public class Produto implements Cloneable
         return ret;
     }
 
+
+    /**
+     * Construtor de cópia da classe Produto.
+     *
+     * @param p O produto a ser copiado.
+     * @throws Exception Se ocorrer um erro durante a cópia.
+     */
     public Produto(Produto p) throws Exception
     {
         this.idProduto = p.idProduto;
@@ -136,6 +253,12 @@ public class Produto implements Cloneable
         this.categoria = p.categoria;
     }
 
+
+    /**
+     * Cria uma cópia do objeto Produto.
+     *
+     * @return Uma cópia do objeto Produto.
+     */
     @Override
     public Object clone()
     {

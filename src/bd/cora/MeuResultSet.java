@@ -26,6 +26,37 @@ import java.net.URL;
 import java.util.Calendar;
 import java.util.Map;
 
+
+/**
+ * A classe 'MeuResultSet' é uma implementação de 'ResultSet', uma interface fornecida pelo Java 
+ * para interagir com conjuntos de resultados de consultas SQL.
+ *
+ * Atributos:
+ * - comando: Representa o objeto 'Statement' associado a este resultado.
+ * - resultado: Representa o próprio conjunto de resultados.
+ *
+ * Métodos:
+ * - Construtores: Define um construtor protegido que inicializa os atributos comando e resultado.
+ * - Métodos da interface ResultSet: Implementa todos os métodos da interface 'ResultSet', 
+ *   que são usados para acessar e manipular os dados retornados pela consulta SQL.
+ * - Métodos herdados da interface 'Wrapper': Implementa métodos 'isWrapperFor' e 'unwrap', 
+ *   que são usados para verificar se um objeto implementa uma determinada interface 
+ *   e para converter o objeto para uma implementação dessa interface, respectivamente.
+ * 
+ * - Outros métodos:
+ *   - 'hashCode': Calcula o código de 'hash' da instância.
+ *   - 'equals': Verifica se dois objetos 'MeuResultSet' são iguais.
+ *   - 'toString': Retorna uma representação em string do objeto.
+ *
+ * Observações:
+ * - Sobrecarga de métodos para suportar diferentes tipos de parâmetros e comprimentos.
+ * - Métodos '@SuppressWarnings("deprecation")' indicam que estão utilizando funcionalidades marcadas como obsoletas.
+ * - Implementação dos métodos compareTo, clone e construtor de cópia não são necessários para esta classe específica.
+ *
+ * Essa classe permite interagir com os resultados de consultas de banco de dados 
+ * de forma mais flexível e oferece recursos para atualização, navegação e manipulação dos dados obtidos.
+ */
+
 public class MeuResultSet implements ResultSet
 {
     protected Statement comando;
@@ -1051,13 +1082,13 @@ public class MeuResultSet implements ResultSet
 		return ret;
     }
 
-    // O metodo compareTo, que �, por vezes, obrigatorio, nao esta
+    // O método 'compareTo' que, por vezes obrigatório, não está
     // sendo implementado porque, tendo dois objetos instanciados
-    // desta classe, nao faria sentido pensar em qual deles eh o
-    // maior ou em qual deles eh o menor.
+    // desta classe, não faria sentido pensar em qual deles é o
+    // maior ou em qual deles é o menor.
 
-    // Os metodos clone e construtor de copia, por vezes, obrigatorios,
-    // nao estao sendo implementados porque, nao sao necessarios, ja
-    // que esta classe nao possui metodos que alterem variaveis
-    // declaradas (private ou protected).
+    // Os métodos 'clone' e 'construtor de cópia', por vezes obrigatórios,
+    // não estão sendo implementados porque, não são necessários, já
+    // que esta classe não possui métodos que alterem variáveis
+    // declaradas ('private' ou 'protected').
 }

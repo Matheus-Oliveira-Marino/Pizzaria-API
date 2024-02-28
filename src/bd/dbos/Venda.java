@@ -1,17 +1,35 @@
 package bd.dbos;
 
-public class Venda
-{
-    private int idPedido;
-    private int idProduto;
-    private int qtd;
-    private double precoTotal;
 
+/**
+ * A classe 'Venda' representa uma venda realizada em um sistema de gerenciamento de vendas.
+ * Cada venda possui um identificador único, identificador do produto, quantidade e preço total.
+ */
+public class Venda
+{ 
+    private int idPedido; // Identificador único da venda
+    private int idProduto; // Identificador do produto vendido
+    private int qtd; // Quantidade do produto vendido
+    private double precoTotal; // Preço total da venda
+
+
+    /**
+     * Obtém o identificador único da venda.
+     *
+     * @return O identificador único da venda.
+     */
     public int getIdVenda()
     {
         return this.idPedido;
     }
 
+
+    /**
+     * Define o identificador único da venda.
+     *
+     * @param idVenda O novo identificador único da venda.
+     * @throws Exception Se o código fornecido for inválido.
+     */
     public void setIdVenda(int idVenda) throws Exception
     {
         if(idVenda <= 0)
@@ -20,11 +38,23 @@ public class Venda
         this.idPedido = idVenda;
     }
 
+    /**
+     * Obtém o identificador do produto vendido.
+     *
+     * @return O identificador do produto vendido.
+     */
     public int getIdProduto()
     {
         return this.idProduto;
     }
 
+
+     /**
+     * Define o identificador do produto vendido.
+     *
+     * @param idProduto O novo identificador do produto vendido.
+     * @throws Exception Se o código fornecido for inválido.
+     */
     public void setIdProduto(int idProduto) throws Exception
     {
         if(idProduto <= 0)
@@ -33,10 +63,22 @@ public class Venda
         this.idProduto = idProduto;
     }
 
+     /**
+     * Obtém a quantidade do produto vendido.
+     *
+     * @return A quantidade do produto vendido.
+     */
     public int getQtd() {
         return this.qtd;
     }
 
+
+    /**
+     * Define a quantidade do produto vendido.
+     *
+     * @param qtd A nova quantidade do produto vendido.
+     * @throws Exception Se a quantidade fornecida for inválida.
+     */
     public void setQtd(int qtd) throws Exception
     {
         if(qtd == 0)
@@ -45,6 +87,13 @@ public class Venda
         this.qtd = qtd;
     }
 
+
+    
+    /**
+     * Obtém o preço total da venda.
+     *
+     * @return O preço total da venda.
+     */
     public double getPrecoTotal()
     {
 //        try
@@ -63,6 +112,13 @@ public class Venda
         return this.precoTotal;
     }
 
+
+    /**
+     * Define o preço total da venda.
+     *
+     * @param precoTotal O novo preço total da venda.
+     * @throws Exception Se o preço fornecido for inválido.
+     */
     public void setPrecoTotal(double precoTotal) throws Exception
     {
         if(precoTotal < 0)
@@ -71,6 +127,17 @@ public class Venda
         this.precoTotal = precoTotal;
     }
 
+
+    
+    /**
+     * Construtor da classe Venda.
+     *
+     * @param idProduto Identificador do produto vendido.
+     * @param qtd Quantidade do produto vendido.
+     * @param precoTotal Preço total da venda.
+     * @param idPedido Identificador único da venda.
+     * @throws Exception Se algum dos parâmetros fornecidos for inválido.
+     */
     public Venda(int idProduto, int qtd,double precoTotal, int idPedido) throws Exception
     {
         this.setIdVenda(idPedido);
@@ -79,6 +146,15 @@ public class Venda
         this.setQtd(qtd);
     }
 
+
+     /**
+     * Construtor da classe Venda.
+     *
+     * @param idProduto Identificador do produto vendido.
+     * @param qtd Quantidade do produto vendido.
+     * @param precoTotal Preço total da venda.
+     * @throws Exception Se algum dos parâmetros fornecidos for inválido.
+     */
     public Venda(int idProduto, int qtd, double precoTotal) throws Exception
     {
         this.setIdProduto(idProduto);
@@ -87,6 +163,12 @@ public class Venda
     }
 
 
+
+    /**
+     * Retorna uma representação textual da venda.
+     *
+     * @return Uma string contendo o código da venda, o código do produto, a quantidade e o preço total.
+     */
     @Override
     public String toString()
     {
@@ -101,6 +183,13 @@ public class Venda
         return ret;
     }
 
+
+    /**
+     * Verifica se a venda é igual a outro objeto.
+     *
+     * @param obj O objeto a ser comparado.
+     * @return 'true' se a venda for igual ao objeto fornecido, 'false' caso contrário.
+     */
     @Override
     public boolean equals(Object obj)
     {
@@ -119,6 +208,12 @@ public class Venda
         return true;
     }
 
+
+      /**
+     * Retorna o código de hash da venda.
+     *
+     * @return O código de hash da venda.
+     */
     @Override
     public int hashCode()
     {
@@ -136,6 +231,13 @@ public class Venda
         return ret;
     }
 
+
+    /**
+     * Construtor de cópia da classe Venda.
+     *
+     * @param v A venda a ser copiada.
+     * @throws Exception Se ocorrer algum erro durante a cópia.
+     */
     public Venda(Venda v) throws Exception
     {
         this.idProduto = v.idProduto;
@@ -144,6 +246,12 @@ public class Venda
         this.precoTotal = v.precoTotal;
     }
 
+
+     /**
+     * Cria uma cópia do objeto Venda.
+     *
+     * @return Uma cópia do objeto Venda.
+     */
     @Override
     public Object clone()
     {

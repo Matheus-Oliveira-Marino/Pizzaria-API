@@ -8,6 +8,39 @@ import java.sql.SQLException;
 import java.sql.SQLWarning;
 import java.sql.Statement;
 
+
+/**
+ * A classe 'MeuStatement' é uma implementação da interface Statement do Java 
+ * para interagir com um banco de dados por meio de comandos SQL.
+ *
+ * Atributos:
+ * - conexao: Representa a conexão com o banco de dados.
+ * - comando: Representa o objeto 'Statement' associado a esta instância.
+ * - comandos: Uma lista de 'Statement 'que foram utilizados durante a execução.
+ * - resultados: Uma lista de 'MeuResultSet' que foram retornados durante a execução.
+ *
+ * Métodos:
+ * - Construtor: Inicializa a conexão com o banco de dados e cria um novo objeto 'Statement'.
+ * - Métodos da interface 'Statement': Implementa todos os métodos definidos na interface 'Statement' 
+ *   para executar comandos SQL.
+ * - Métodos herdados da interface 'Wrappe'r: Implementa os métodos 'isWrapperFor' e 'unwrap'
+ *   para verificar e converter o objeto, respectivamente.
+ * 
+ * - Outros métodos:
+ *   - 'hashCode': Calcula o código de 'hash' da instância com base nos seus atributos.
+ *   - 'equals': Verifica se dois objetos 'MeuStatement' são iguais com base nos seus atributos.
+ *   - 'toString': Retorna uma representação em string do objeto, incluindo seus atributos.
+ *
+ * Observações:
+ * - A classe controla múltiplos objetos 'Statement' e 'MeuResultSet' para permitir operações 'batch' 
+ * e manter os resultados das consultas.
+ * 
+ * - Métodos como 'compareTo', 'clone' e 'construtor de cópia' não são implementados 
+ *   porque não são necessários para esta classe específica.
+ *
+ * Esta classe oferece uma maneira flexível de interagir com um banco de dados, 
+ * executando comandos SQL e armazenando resultados para manipulação posterior.
+ */
 public class MeuStatement implements Statement
 {
     protected Connection conexao=null;
