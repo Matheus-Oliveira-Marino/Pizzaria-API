@@ -1,6 +1,7 @@
+import bd.core.MeuResultSet;
 import bd.daos.Categorias; // Importa a classe 'Categorias' do pacote 'bd.daos'.
 import bd.daos.Produtos; // Importa a classe 'Produtos' do pacote 'bd.dao's.
-import bd.cora.MeuResultSet; // Importa a classe 'MeuResultSet' do pacote 'bd.cora'.
+
 import java.awt.*; // Importa o pacote j'ava.awt' para componentes gráficos.
 import java.awt.event.*; // Importa o pacote 'java.awt.event' para lidar com eventos.
 import javax.swing.*; // Importa o pacote 'javax.swing' para componentes de interface gráfica.

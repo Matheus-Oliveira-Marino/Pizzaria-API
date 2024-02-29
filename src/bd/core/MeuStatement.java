@@ -1,4 +1,4 @@
-package bd.cora;
+package bd.core;
 
 import java.util.ArrayList;
 import java.sql.Connection;

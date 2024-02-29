@@ -1,6 +1,6 @@
 package bd;
 
-import bd.cora.MeuPreparedStatement;
+import bd.core.MeuPreparedStatement;
 
 public class BDSQLServer
 {

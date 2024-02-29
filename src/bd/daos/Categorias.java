@@ -2,7 +2,7 @@ package bd.daos;
 
 import java.sql.*;
 import bd.*;
-import bd.cora.MeuResultSet;
+import bd.core.MeuResultSet;
 
 
 /**

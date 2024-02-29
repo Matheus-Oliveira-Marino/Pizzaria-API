@@ -1,7 +1,7 @@
 package bd.daos;
 
 import bd.BDSQLServer;
-import bd.cora.MeuResultSet;
+import bd.core.MeuResultSet;
 import bd.dbos.Venda;
 import javax.swing.*;
 import java.sql.SQLException;
