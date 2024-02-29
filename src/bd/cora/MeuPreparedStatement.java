@@ -829,7 +829,7 @@ public class MeuPreparedStatement extends MeuStatement implements PreparedStatem
     * @throws SQLException se ocorrer um erro ao definir o parâmetro.
     * @deprecated Este método está obsoleto e seu uso é desencorajado
     */
-    @SuppressWarnings("deprecation")
+    
     public void setUnicodeStream (int parameterIndex, InputStream x, int length) throws SQLException
     {
         this.comando.setUnicodeStream (parameterIndex, x, length);
