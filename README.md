@@ -1,5 +1,5 @@
 <p align = "center">
-##  🍕 Pizzaria I AM CRUD 🍕
+ <code>🍕 Pizzaria I AM CRUD 🍕</code>
 
 </p>
 ## Descrição
