@@ -1,7 +1,7 @@
 ## Pizzaria I AM CRUD
 
 ## Descrição
-- [ ] O projeto Pizzaria CRUD é um sistema de gerenciamento de vendas de uma pizzaria, permitindo o cadastro, consulta, atualização e exclusão de produtos e vendas. Ele foi desenvolvido em Java utilizando o paradigma de programação orientada a objetos e uma arquitetura MVC (Model-View-Controller).
+- O projeto Pizzaria CRUD é um sistema de gerenciamento de vendas de uma pizzaria, permitindo o cadastro, consulta, atualização e exclusão de produtos e vendas. Ele foi desenvolvido em Java utilizando o paradigma de programação orientada a objetos e uma arquitetura MVC (Model-View-Controller).
 
 ## Funcionalidades 
 
@@ -78,7 +78,7 @@ A visualização `JAVA PROJECTS` permite que você gerencie suas dependências. 
 
     2.1 Adicionando arquivo `.jar` no VScode: [link](https://www.youtube.com/watch?v=3Qm54znQX2E&list=PLDyYFpL8k5MyC7auUCOF-S8YGM8tGaoSw&index=1)
 
-    2.2 Adicionando  arquivo `.jar` no IntelliJ: [link]
+    2.2 Adicionando  arquivo `.jar` no IntelliJ: [link]()
 
 3. Configure a conexão com o banco de dados __*SQL Server*__ no arquivo `BDSQLServer.java.`
 
