@@ -17,6 +17,8 @@
 
 O projeto oferece as seguintes funcionalidades: 
 
+<br>
+
 ### 1. _Cadastro de Produtos e Categorias_
 - `Cadastro de Produtos e Categorias:` Permite o registro de novos produtos, incluindo 'nome', 'preço', 'descrição' e 'categoria'.
 
