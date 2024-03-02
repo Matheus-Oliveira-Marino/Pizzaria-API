@@ -80,7 +80,7 @@ A visualização `JAVA PROJECTS` permite que você gerencie suas dependências. 
 
     2.1 Adicionando arquivo `.jar` no VScode: [link](https://www.youtube.com/watch?v=3Qm54znQX2E&list=PLDyYFpL8k5MyC7auUCOF-S8YGM8tGaoSw&index=1)
 
-    2.2 Adicionando  arquivo `.jar` no IntelliJ: [link]()
+    2.2 Adicionando  arquivo `.jar` no IntelliJ: [link](https://github.com/Matheus-Oliveira-Marino/Pizzaria-API/blob/main/library_tutorial/Adding%20java%20library%20module%20on%20IntelliJ.mp4)
 
 3. Configure a conexão com o banco de dados __*SQL Server*__ no arquivo `BDSQLServer.java.`
 
