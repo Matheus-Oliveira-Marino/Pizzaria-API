@@ -1,4 +1,4 @@
-## Pizzaria I AM CRUD
+##  🍕 Pizzaria I AM CRUD 🍕
 
 ## Descrição
 - O projeto Pizzaria CRUD é um sistema de gerenciamento de vendas de uma pizzaria, permitindo o cadastro, consulta, atualização e exclusão de produtos e vendas. Ele foi desenvolvido em Java utilizando o paradigma de programação orientada a objetos e uma arquitetura `MVC` (Model-View-Controller).
@@ -88,5 +88,5 @@ A visualização `JAVA PROJECTS` permite que você gerencie suas dependências. 
 
 ## Licença
 
-Este projeto está licenciado sob a [MIT LICENSE](https://github.com/Matheus-Oliveira-Marino/Pizzaria-API/blob/d15dc3f0452245adbe4d4b22e7ac1c3af5576893/LICENSE). Consulte o arquivo LICENSE.md para obter detalhes.
+Este projeto está licenciado sob a [MIT LICENSE](https://github.com/Matheus-Oliveira-Marino/Pizzaria-API/blob/d15dc3f0452245adbe4d4b22e7ac1c3af5576893/LICENSE). Consulte o arquivo para obter detalhes.
 
