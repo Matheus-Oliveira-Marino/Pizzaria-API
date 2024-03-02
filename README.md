@@ -2,8 +2,7 @@
 
 ## Descrição
 - O projeto Pizzaria CRUD é um sistema de gerenciamento de vendas de uma pizzaria, permitindo o cadastro, consulta, atualização e exclusão de produtos e vendas. Ele foi desenvolvido em Java utilizando o paradigma de programação orientada a objetos e uma arquitetura `MVC` (Model-View-Controller).
-
-<br></br>
+<br>
 ## Funcionalidades 
 
 O projeto oferece as seguintes funcionalidades: 
@@ -13,14 +12,14 @@ O projeto oferece as seguintes funcionalidades:
 
 - `Classificação de Categorias:` Permite a seleção de categorias pré-definidas para classificar os produtos.
 
-<br></br>
-
+<br>
 ### 2. _Registro de Vendas_
 
 - `Registro de Vendas:` Permite registrar vendas de produtos, especificando o 'produto' vendido, a 'quantidade' e o 'preço total'.
 
 - `Atualização de Vendas:` Permite a atualização dos detalhes de vendas, como o 'produto' vendido, a 'quantidade' e o 'preço total'.
 
+<br>
 ### 3. _Visualização e Gerenciamento_
 
 - `Visualização de Produtos:` Permite visualizar todos os produtos cadastrados, incluindo seus detalhes como 'nome', 'preço', 'descrição' e 'categoria'.
