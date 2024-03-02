@@ -75,8 +75,7 @@ O projeto está organizado em pacotes que seguem uma estrutura `MVC`, separando 
 
 - [ ] `bd.daos:` Classes que representam os DAOs (Data Access Objects), responsáveis por realizar operações no banco de dados.
 
-- [ ] `gui`: Contém as classes que representam a 
-interface gráfica do usuário.
+- [ ] `gui`: Contém as classes que representam a interface gráfica do usuário.
 
 - [ ] `telasemframes`: Classes que representam as telas e frames da interface gráfica.
 
@@ -104,9 +103,9 @@ A visualização `JAVA PROJECTS` permite que você gerencie suas dependências. 
 
 2. Importe o projeto em sua IDE preferida (por exemplo, Eclipse, IntelliJ IDEA) e instale a biblioteca `sqljdbc4.jar` como dependência.
 
-    2.1 Adicionando arquivo `.jar` no VScode: [link](https://www.youtube.com/watch?v=3Qm54znQX2E&list=PLDyYFpL8k5MyC7auUCOF-S8YGM8tGaoSw&index=1)
+    2.1 Adicionando arquivo `.jar` no VScode: [link](https://www.youtube.com/watch?v=3Qm54znQX2E&list=PLDyYFpL8k5MyC7auUCOF-S8YGM8tGaoSw&index=1).
 
-    2.2 Adicionando  arquivo `.jar` no IntelliJ: [link](https://github.com/Matheus-Oliveira-Marino/Pizzaria-API/blob/main/library_tutorial/Adding%20java%20library%20module%20on%20IntelliJ.mp4)
+    2.2 Adicionando  arquivo `.jar` no IntelliJ: [link](https://github.com/Matheus-Oliveira-Marino/Pizzaria-API/blob/main/library_tutorial/Adding%20java%20library%20module%20on%20IntelliJ.mp4).
 
 
 3. Configure a conexão com o banco de dados __*SQL Server*__ no arquivo `BDSQLServer.java.`
