@@ -106,9 +106,27 @@ A visualização `JAVA PROJECTS` permite que você gerencie suas dependências. 
 
     2.2 Adicionando  arquivo `.jar` no IntelliJ: [link](https://github.com/Matheus-Oliveira-Marino/Pizzaria-API/blob/main/library_tutorial/Adding%20java%20library%20module%20on%20IntelliJ.mp4)
 
+
 3. Configure a conexão com o banco de dados __*SQL Server*__ no arquivo `BDSQLServer.java.`
 
-4. Execute o programa a partir da classe principal `PizzariaTela.java`.
+<blockquote style="text-align: center;">
+<p align = "center">Configuração do Banco de Dados</p>
+</blockquote>
+
+> Antes de executar o projeto, certifique-se de configurar corretamente as informações de conexão com o banco de dados SQL Server. Siga as etapas abaixo para configurar o banco de dados:
+
+> 1. `Driver JDBC`: Você precisará do nome do driver JDBC adequado para o seu banco de dados SQL Server. Normalmente, isso é fornecido pela documentação do banco de dados ou pelo provedor do driver.
+
+> `URL de Conexão`: Determine a URL de conexão correta para o seu banco de dados. Isso inclui o endereço do servidor, a porta e o nome do banco de dados. Consulte a documentação do seu banco de dados para obter mais informações sobre como construir a URL de conexão correta.
+
+> `Nome de Usuário e Senha`: Forneça o nome de usuário e a senha que serão usados para autenticar a conexão com o banco de dados.
+ 
+
+> Link para como baixar e instalar o [SQL Server](https://www.youtube.com/watch?v=tZs8ZPMvNzM).
+ 
+4. Execute o programa a partir da classe principal `PizzariaTela.java`, sob o comando __*run build*__.
+
+
 
 <br>
 
