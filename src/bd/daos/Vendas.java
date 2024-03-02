@@ -3,8 +3,10 @@ package bd.daos;
 import bd.BDSQLServer;
 import bd.core.MeuResultSet;
 import bd.dbos.Venda;
+
 import javax.swing.*;
 import java.sql.SQLException;
+
 
 
 /**
@@ -15,7 +17,7 @@ import java.sql.SQLException;
 public class Vendas
 {
 
-    /**
+     /**
      * Verifica se uma venda está cadastrada no banco de dados com base no seu 'ID'.
      *
      * @param idVenda O 'ID' da venda a ser verificada.
@@ -48,7 +50,7 @@ public class Vendas
     }
 
 
-       /**
+      /**
      * Inclui uma nova venda no banco de dados.
      *
      * @param venda O objeto 'Venda' a ser incluído.
@@ -84,7 +86,7 @@ public class Vendas
     }
 
 
-    /**
+     /**
      * Exclui uma venda do banco de dados com base no seu 'ID'.
      *
      * @param idVenda O 'ID' da venda a ser excluída.
@@ -116,6 +118,13 @@ public class Vendas
         }
     }
 
+
+    /**
+     * Altera os detalhes de uma venda no banco de dados.
+     *
+     * @param venda O objeto de venda a ser alterado.
+     * @throws Exception Se ocorrer algum erro durante a alteração dos dados da venda.
+     */
     public static void alterar (Venda venda) throws Exception
     {
         //if (venda == null) throw new Exception("Venda nao fornecido");
@@ -148,8 +157,7 @@ public class Vendas
         }
     }
 
-
-    /**
+     /**
      * Obtém uma venda do banco de dados com base no seu 'ID'.
      *
      * @param idVenda O 'ID' da venda a ser recuperada.
@@ -189,6 +197,7 @@ public class Vendas
     }
 
 
+    
      /**
      * Obtém todas as vendas cadastradas no banco de dados.
      *
@@ -232,6 +241,9 @@ public class Vendas
         System.out.println(idProduto);
 
         MeuResultSet resultado = Produtos.getProduto();
+        @SuppressWarnings("unused")
+        String dados = "";
+
         double preco =  resultado.getDouble("preco");
         System.out.println(preco);
 
@@ -262,5 +274,7 @@ public class Vendas
         System.out.println(preco);
         return preco;
     }
+
+
 
 }

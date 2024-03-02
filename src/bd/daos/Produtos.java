@@ -49,7 +49,7 @@ public class Produtos
     }
 
 
-     /**
+    /**
      * Inclui um novo produto no banco de dados.
      *
      * @param produto O objeto 'Produto' a ser incluído.
@@ -85,7 +85,7 @@ public class Produtos
     }
 
 
-     /**
+    /**
      * Exclui um produto do banco de dados com base no seu 'ID'.
      *
      * @param idProduto O 'ID' do produto a ser excluído.
@@ -119,7 +119,8 @@ public class Produtos
         }
     }
 
-      /**
+
+     /**
      * Altera os dados de um produto no banco de dados.
      *
      * @param produto O objeto 'Produto' com os novos dados a serem atualizados.
@@ -232,7 +233,7 @@ public class Produtos
     }
 
 
-      /**
+    /**
      * Obtém o preço de um produto com base no seu 'ID'.
      *
      * @param idProduto O 'ID' do produto.
@@ -263,37 +264,6 @@ public class Produtos
             erro.printStackTrace();
             throw new Exception("Erro ao recuperar produto");
         }
-    }
-
-
-    /**
-     * Obtém o 'ID' do próximo produto a ser cadastrado no banco de dados.
-     *
-     * @return O 'ID' do próximo produto.
-     */
-    public  static int getId()
-    {
-
-        try
-        {
-            String sql;
-
-            sql = "SELECT idProduto " +
-                    "FROM pizzaria.Produtos where ";
-
-            BDSQLServer.COMANDO.prepareStatement (sql);
-            MeuResultSet result = (MeuResultSet)BDSQLServer.COMANDO.executeQuery();
-            result.next();
-
-           return result.getInt("IDPRODUTO");
-        }
-        catch (SQLException erro)
-        {
-            erro.printStackTrace();
-        }
-
-        return 0;
-
     }
 
 }

@@ -20,10 +20,13 @@ public class Produto implements Cloneable
      *
      * @return O identificador único do produto.
      */
-    public int getIdProduto() {return this.idProduto;}
+    public int getIdProduto()
+    {
+        return this.idProduto;
+    }
 
 
-     /**
+    /**
      * Define o identificador único do produto.
      *
      * @param idProduto O novo identificador único do produto.
@@ -43,11 +46,12 @@ public class Produto implements Cloneable
      *
      * @return O nome do produto.
      */
-    public String getNome() {return this.nome;}
-    
+    public String getNome() {
+        return this.nome;
+    }
 
 
-     /**
+    /**
      * Define o nome do produto.
      *
      * @param nome O novo nome do produto.
@@ -62,7 +66,7 @@ public class Produto implements Cloneable
     }
 
 
-      /**
+     /**
      * Obtém o preço do produto.
      *
      * @return O preço do produto.
@@ -70,7 +74,6 @@ public class Produto implements Cloneable
     public double getPreco() {return this.preco;}
 
 
-    
     /**
      * Define o preço do produto.
      *
@@ -86,7 +89,7 @@ public class Produto implements Cloneable
     }
 
 
-     /**
+    /**
      * Obtém a descrição do produto.
      *
      * @return A descrição do produto.
@@ -109,7 +112,6 @@ public class Produto implements Cloneable
     }
 
 
-    
     /**
      * Obtém a categoria do produto.
      *
@@ -117,7 +119,8 @@ public class Produto implements Cloneable
      */
     public int getCategoria() {return this.categoria;}
 
-     /**
+
+    /**
      * Define a categoria do produto.
      *
      * @param categoria A nova categoria do produto.
@@ -130,6 +133,7 @@ public class Produto implements Cloneable
 
         this.categoria = categoria;
     }
+
 
      /**
      * Construtor da classe Produto.
@@ -150,7 +154,7 @@ public class Produto implements Cloneable
     }
 
 
-    /**
+     /**
      * Construtor da classe Produto.
      *
      * @param nome Nome do produto.
@@ -170,7 +174,6 @@ public class Produto implements Cloneable
     }
 
 
-    
     /**
      * Retorna uma representação textual do produto.
      *
@@ -191,7 +194,6 @@ public class Produto implements Cloneable
     }
 
 
-    
     /**
      * Verifica se o produto é igual a outro objeto.
      *
@@ -216,7 +218,7 @@ public class Produto implements Cloneable
     }
 
 
-     /**
+    /**
      * Retorna o código de hash do produto.
      *
      * @return O código de hash do produto.

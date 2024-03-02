@@ -1,19 +1,20 @@
 package bd.dbos;
 
 
+
 /**
  * A classe 'Venda' representa uma venda realizada em um sistema de gerenciamento de vendas.
  * Cada venda possui um identificador único, identificador do produto, quantidade e preço total.
  */
 public class Venda
-{ 
+{
     private int idPedido; // Identificador único da venda
     private int idProduto; // Identificador do produto vendido
     private int qtd; // Quantidade do produto vendido
     private double precoTotal; // Preço total da venda
 
 
-    /**
+     /**
      * Obtém o identificador único da venda.
      *
      * @return O identificador único da venda.
@@ -37,6 +38,7 @@ public class Venda
 
         this.idPedido = idVenda;
     }
+
 
     /**
      * Obtém o identificador do produto vendido.
@@ -63,7 +65,8 @@ public class Venda
         this.idProduto = idProduto;
     }
 
-     /**
+
+    /**
      * Obtém a quantidade do produto vendido.
      *
      * @return A quantidade do produto vendido.
@@ -88,27 +91,13 @@ public class Venda
     }
 
 
-    
-    /**
+     /**
      * Obtém o preço total da venda.
      *
      * @return O preço total da venda.
      */
     public double getPrecoTotal()
     {
-//        try
-//        {
-//            double preco;
-//
-//            preco = Produtos.getPreco(Integer.valueOf(txtIdProduto));
-//            precoTotal = preco * Integer.parseInt(txtQtd);
-//            System.out.println(""+preco+" "+precoTotal);
-//
-//        }
-//        catch (Exception erro)
-//        {
-//            erro.printStackTrace();
-//        }
         return this.precoTotal;
     }
 
@@ -128,7 +117,6 @@ public class Venda
     }
 
 
-    
     /**
      * Construtor da classe Venda.
      *
@@ -147,7 +135,7 @@ public class Venda
     }
 
 
-     /**
+    /**
      * Construtor da classe Venda.
      *
      * @param idProduto Identificador do produto vendido.
@@ -209,7 +197,7 @@ public class Venda
     }
 
 
-      /**
+    /**
      * Retorna o código de hash da venda.
      *
      * @return O código de hash da venda.
@@ -247,7 +235,7 @@ public class Venda
     }
 
 
-     /**
+    /**
      * Cria uma cópia do objeto Venda.
      *
      * @return Uma cópia do objeto Venda.
