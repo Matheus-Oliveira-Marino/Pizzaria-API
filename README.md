@@ -4,7 +4,7 @@
 
 <br>
 
-<div align="center" style="margin-bottom: 20px;">
+<div align="center">
   <h2>Descrição</h2>   
   <p style="margin-top: 0;">O projeto Pizzaria CRUD é um sistema de gerenciamento de vendas de uma pizzaria, permitindo o cadastro, consulta, atualização e exclusão de produtos e vendas. Ele foi desenvolvido em Java utilizando o paradigma de programação orientada a objetos e uma arquitetura <code>MVC</code> (Model-View-Controller).</p>
 </div>
@@ -23,6 +23,7 @@ O projeto oferece as seguintes funcionalidades:
 - `Classificação de Categorias:` Permite a seleção de categorias pré-definidas para classificar os produtos.
 
 <br>
+
 ### 2. _Registro de Vendas_
 
 - `Registro de Vendas:` Permite registrar vendas de produtos, especificando o 'produto' vendido, a 'quantidade' e o 'preço total'.
@@ -30,11 +31,14 @@ O projeto oferece as seguintes funcionalidades:
 - `Atualização de Vendas:` Permite a atualização dos detalhes de vendas, como o 'produto' vendido, a 'quantidade' e o 'preço total'.
 
 <br>
+
 ### 3. _Visualização e Gerenciamento_
 
 - `Visualização de Produtos:` Permite visualizar todos os produtos cadastrados, incluindo seus detalhes como 'nome', 'preço', 'descrição' e 'categoria'.
 
 - `Visualização de Vendas:` Permite visualizar todas as vendas registradas, mostrando detalhes como 'produto vendido', 'quantidade' e 'preço total'.
+
+<br>
 
 ### 4. _Atualização e Exclusão_
 
@@ -45,6 +49,8 @@ O projeto oferece as seguintes funcionalidades:
 
 - `Exclusão de Vendas: ` Permite excluir vendas registradas do sistema.
 
+<br>
+
 ## Tecnologias Utilizadas
 
 - [ ] `Java`: Linguagem de programação utilizada para o desenvolvimento da lógica do sistema.
@@ -54,6 +60,8 @@ O projeto oferece as seguintes funcionalidades:
 - [ ] `JDBC`: API do Java para conexão e execução de consultas em bancos de dados SQL.
 
 - [ ] `SQL Server`: Banco de dados relacional utilizado para armazenar os dados da aplicação.
+
+<br>
 
 ## Estrutura do Projeto
 
@@ -72,9 +80,13 @@ interface gráfica do usuário.
 
 - [ ] `model`: Classes que representam os modelos de dados do sistema.
 
+<br>
+
 ## Gerenciamento de Dependências
 
 A visualização `JAVA PROJECTS` permite que você gerencie suas dependências. Mais detalhes podem ser encontrados [aqui](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+
+<br>
 
 ## Como Executar
 
@@ -86,6 +98,8 @@ A visualização `JAVA PROJECTS` permite que você gerencie suas dependências. 
 
     1.3 Instalação __*Linux 22.04 LTS*__: [Link do tutorial](https://www.youtube.com/watch?v=vVrIDJ--GOA).
 
+   <br>
+
 2. Importe o projeto em sua IDE preferida (por exemplo, Eclipse, IntelliJ IDEA) e instale a biblioteca `sqljdbc4.jar` como dependência.
 
     2.1 Adicionando arquivo `.jar` no VScode: [link](https://www.youtube.com/watch?v=3Qm54znQX2E&list=PLDyYFpL8k5MyC7auUCOF-S8YGM8tGaoSw&index=1)
@@ -95,6 +109,8 @@ A visualização `JAVA PROJECTS` permite que você gerencie suas dependências. 
 3. Configure a conexão com o banco de dados __*SQL Server*__ no arquivo `BDSQLServer.java.`
 
 4. Execute o programa a partir da classe principal `PizzariaTela.java`.
+
+<br>
 
 ## Licença
 
