@@ -7,7 +7,9 @@
 <div align="center">
 
   <h2>Descrição</h2>   
-  - O projeto Pizzaria CRUD é um sistema de gerenciamento de vendas de uma pizzaria, permitindo o cadastro, consulta, atualização e exclusão de produtos e vendas. Ele foi desenvolvido em Java utilizando o paradigma de programação orientada a objetos e uma arquitetura `MVC` (Model-View-Controller).
+  
+  O projeto Pizzaria CRUD é um sistema de gerenciamento de vendas de uma pizzaria, permitindo o cadastro, consulta, atualização e exclusão de produtos e vendas. Ele foi desenvolvido em Java utilizando o paradigma de programação orientada a objetos e uma arquitetura `MVC` (Model-View-Controller).
+</ul>
 <br>
 
 </div>
